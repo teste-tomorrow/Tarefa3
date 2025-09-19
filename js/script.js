@@ -31,7 +31,20 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
     displayResult(resultado);
 });
 
-// ---------- COLE AQUI O CÓDIGO DO BOTÃO 2 ----------
+// ---------- CÓDIGO DO BOTÃO 11 (Lucas Carvalho) ----------
+document.getElementById('btn-aluno11').addEventListener('click', () => {
+    const [val1, val2] = getValues();
+    if (val1 === null) return;
+
+    let resultado;
+    if (val1 === val2) {
+        resultado = `Os valores são IGUAIS (${val1} = ${val2})`;
+    } else {
+        resultado = `Os valores são DIFERENTES (${val1} ≠ ${val2})`;
+    }
+
+    displayResult(resultado);
+});
 
 
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
