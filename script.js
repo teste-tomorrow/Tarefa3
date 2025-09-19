@@ -50,4 +50,14 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
 
 
-// etc...
+// ---------- CÓDIGO DO BOTÃO 10 (RAFAEL RAMOS) ----------
+
+document.getElementById('btn-aluno10').addEventListener('click', () => {
+    const [val1, val2] = getValues();
+    
+    // Verifica se ambos os valores são válidos
+    if (val1 === null || val2 === null) return;
+    
+    const resultado = Math.min(val1, val2);
+    displayResult(resultado);
+});
