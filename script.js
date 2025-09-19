@@ -37,4 +37,15 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
 
 
-// etc...
+// ---------- COLE AQUI O CÓDIGO DO BOTÃO 14 ----------
+document.getElementById('btn-aluno14').addEventListener('click', () => {
+
+    const [val1, val2] = getValues();
+
+    if (val1 === null) return; // Interrompe se os valores forem inválidos
+
+    const resultado = val1 + (val1 * (val2 / 100)); // Calcula o acréscimo percentual
+
+    displayResult(resultado);
+
+});
