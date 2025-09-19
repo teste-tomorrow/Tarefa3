@@ -31,23 +31,42 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
     displayResult(resultado);
 });
 
-// ---------- COLE AQUI O CÓDIGO DO BOTÃO 30 ----------
-document.getElementById('btn-aluno1').addEventListener('click', () => {
-    // Defina os pesos para cada valor.
-    // Eles podem ser fixos no código ou obtidos de outros campos de input.
-    const peso1 = 2; // Exemplo: Peso para a primeira nota
-    const peso2 = 3; // Exemplo: Peso para a segunda nota
+// ---------- COLE AQUI O CÓDIGO DO BOTÃO 2 ----------
 
-    const [val1, val2] = getValues();
-    if (val1 === null) return; // Interrompe se os valores forem inválidos
-
-    // Cálculo da média ponderada: (valor1 * peso1 + valor2 * peso2) / (soma dos pesos)
-    const resultado = (val1 * peso1 + val2 * peso2) / (peso1 + peso2);
-
-    displayResult(resultado);
-});
 
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
 
+// ---------- COLE AQUI O CÓDIGO DO BOTÃO 23 ----------
+
+### Função `IMC`
+
+Esta função recebe `PESO` e `ALTURA`, calcula o IMC e chama a função `displayResult` para exibir o resultado, mantendo a mesma estrutura do seu exemplo.
+
+/**
+ * Calcula o Índice de Massa Corporal (IMC) e exibe o resultado.
+ * Mantém a estrutura e nomenclatura do código original para evitar conflitos.
+ *
+ * @param {number} PESO - O peso da pessoa em quilogramas (ex: 70).
+ * @param {number} ALTURA - A altura da pessoa em metros (ex: 1.75).
+ */
+function IMC(PESO, ALTURA) {
+    // Atribuindo os parâmetros às variáveis com os mesmos nomes da estrutura original.
+    const val1 = PESO;
+    const val2 = ALTURA;
+
+    // Checagem para garantir que os valores são válidos para o cálculo.
+    // O peso e a altura devem ser números positivos.
+    if (typeof val1 !== 'number' || typeof val2 !== 'number' || val1 <= 0 || val2 <= 0) {
+        // Opcional: você pode querer exibir uma mensagem de erro aqui.
+        // displayResult("Por favor, forneça valores válidos.");
+        return; // Interrompe se os valores forem inválidos.
+    }
+
+    // A fórmula do IMC é PESO / (ALTURA * ALTURA).
+    const resultado = val1 / (val2 * val2);
+
+    // Utiliza a mesma função do seu código original para exibir o resultado.
+    displayResult(resultado);
+}
 
 // etc...
