@@ -1,5 +1,5 @@
 ###                                   ###   
-### Função para calcular a diferença  ###
+   //Função para calcular a diferença  
 ###                                   ###    
 
 function calcularDiferenca(num1, num2) {
