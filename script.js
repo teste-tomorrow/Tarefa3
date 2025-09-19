@@ -31,8 +31,16 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
     displayResult(resultado);
 });
 
-// ---------- COLE AQUI O CÓDIGO DO BOTÃO 2 ----------
+// ---------- CÓDIGO DO BOTÃO 20 (HIPOTENUSA) ----------
+document.getElementById('btn-aluno20').addEventListener('click', () => {
+    const [cateto1, cateto2] = getValues();
+    if (cateto1 === null) return; 
+    const hipotenusa = Math.sqrt(Math.pow(cateto1, 2) + Math.pow(cateto2, 2));
+    displayResult(hipotenusa.toFixed(2)); 
+});
 
+
+   
 
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
 
