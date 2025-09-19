@@ -32,7 +32,12 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
 });
 
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 2 ----------
-
+document.getElementById('btn-aluno21').addEventListener('click', () => {
+    const [val1, val2] = getValues();
+    if (val1 === null || val2 === null) return; // Interrompe se os valores forem inválidos
+    const resultado = 2 * (val1 + val2);
+    displayResult(resultado);
+});
 
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
 
