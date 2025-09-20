@@ -47,7 +47,17 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
     displayResult(resultado);
 });
 
-// ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
+// ---------- COLE AQUI O CÓDIGO DO BOTÃO 5 ----------
+document.getElementById('btn-aluno1').addEventListener('click', () => {
 
+    const [base, expoente] = getValues();
+
+    if (base === null || expoente === null) return; // Interrompe se os valores forem inválidos
+
+    const resultado = Math.pow(base, expoente);
+
+    displayResult(resultado);
+
+});
 
 // etc...
