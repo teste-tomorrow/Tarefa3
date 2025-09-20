@@ -47,6 +47,19 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
     displayResult(resultado);
 });
 
+// ---------- COLE AQUI O CÓDIGO DO BOTÃO 15 (VINICIUS MENEZES) ----------
+document.getElementById('btn-aluno15').addEventListener('click', () => {
+
+    const [val1, val2] = getValues();
+
+    if (val1 === null) return; // Interrompe se os valores forem inválidos
+
+    const resultado = val1 - (val1 * (val2 / 100));
+
+    displayResult(resultado);
+
+});
+
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
 
 
