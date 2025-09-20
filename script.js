@@ -49,5 +49,18 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
 
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
 
+ // ---------- COLE AQUI O CÓDIGO DO BOTÃO 17 área do retângulo ----------
+
+document.getElementById('btn-aluno1').addEventListener('click', () => {
+
+    const [val1, val2] = getValues(); // val1 = base, val2 = altura
+
+    if (val1 === null) return; // Interrompe se os valores forem inválidos
+
+    const resultado = val1 * val2; // Calcula a área do retângulo
+
+    displayResult(resultado);
+
+});
 
 // etc...
