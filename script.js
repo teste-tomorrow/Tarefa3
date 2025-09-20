@@ -31,6 +31,8 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
     displayResult(resultado);
 });
 
+
+
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 30 ----------
 document.getElementById('btn-aluno1').addEventListener('click', () => {
     // Defina os pesos para cada valor.
@@ -48,6 +50,24 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
 });
 
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
+
+// ----------  CÓDIGO DO BOTÃO 4 - DIVISÃO ----------
+
+document.getElementById('btn-aluno4').addEventListener('click', () => {
+    const [val1, val2] = getValues();
+    if (val1 === null) return; // Interrompe se os valores forem inválidos
+
+    // Evita a divisão por zero
+    if (val2 === 0) {
+        displayResult('Erro: Divisão por zero não é permitida.');
+        return;
+    }
+
+    const resultado = val1 / val2;
+    displayResult(resultado);
+});
+// --------------------------------------------------
+
 
 
 // etc...
