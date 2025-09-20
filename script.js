@@ -32,7 +32,7 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
 });
 
 
-// ---------- CÓDIGO DO BOTÃO 6 (ANTONIO BACELAR) ----------
+// ---------- CÓDIGO DO BOTÃO 3 (ANTONIO BACELAR) ----------
 document.getElementById('btn-aluno3').addEventListener('click', () => {
     const [val1, val2] = getValues();
     if (val1 === null) return; // Interrompe se os valores forem inválidos
