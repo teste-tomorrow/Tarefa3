@@ -50,4 +50,22 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 3 ----------
 
 
+// ---------- COLE AQUI O CÓDIGO DO BOTÃO 6 (André Melchior) ----------
+// Funcionalidade de Módulo (Resto da divisão)
+document.getElementById('btn-aluno6').addEventListener('click', () => {
+    const [val1, val2] = getValues();
+    if (val1 === null) return; // Interrompe se os valores forem inválidos
+
+    // Verifica se o segundo valor é zero para evitar erro de divisão por zero
+    if (val2 === 0) {
+        alert('ERRO: Divisão por zero não é permitida para o módulo.');
+        displayResult('Indefinido');
+        return;
+    }
+
+    // Calcula o resto da divisão usando o operador %
+    const resultado = val1 % val2;
+    displayResult(resultado);
+});
+
 // etc...
