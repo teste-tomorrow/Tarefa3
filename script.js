@@ -47,6 +47,7 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
     displayResult(resultado);
 });
 
+
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 5 ----------
 document.getElementById('btn-aluno1').addEventListener('click', () => {
 
