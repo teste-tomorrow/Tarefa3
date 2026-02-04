@@ -31,6 +31,17 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
     displayResult(resultado);
 });
 
+// ---------- CÓDIGO DO BOTÃO 13 (PORCENTAGEM DE VALOR) ----------
+document.getElementById('btn-aluno13').addEventListener('click', () => {
+    const [percentual, valorBase] = getValues();
+    if (percentual === null) return; // Interrompe se os valores forem inválidos
+
+    // Cálculo de X% de Y: (percentual / 100) * valorBase
+    const resultado = (percentual / 100) * valorBase;
+
+    displayResult(resultado);
+});
+
 // ---------- COLE AQUI O CÓDIGO DO BOTÃO 30 ----------
 document.getElementById('btn-aluno1').addEventListener('click', () => {
     // Defina os pesos para cada valor.
