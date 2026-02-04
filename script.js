@@ -61,4 +61,13 @@ document.getElementById('btn-aluno1').addEventListener('click', () => {
 
 });
 
+// ---------- CÓDIGO DO BOTÃO 19 (APOLIANA) ----------
+document.getElementById('btn-aluno19').addEventListener('click', () => {
+    const [val1, val2] = getValues(); 
+    if (val1 === null) return;
+    const resultado = (val1 * val2) / 2;
+    displayResult(resultado);
+});
+
+
 // etc...
